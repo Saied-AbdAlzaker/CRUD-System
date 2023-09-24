@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>CRUD System</title>
+</head>
+
+<body>
+    <div class="crud w-75 m-auto p-5 my-3 text-white">
+        <div id="textAlert" class="alert alert-danger p-2 my-2 d-none">Not Valid...</div>
+        <label>Product Name</label>
+        <input id="productName" type="text" class="form-control">
+        <div id="nameAlert" class="alert alert-danger p-2 my-2 d-none">Product Name Should Be ...</div>
+        <label>Product Price</label>
+        <input id="productPrice" type="number" class="form-control">
+        <div id="numberAlert" class="alert alert-danger p-2 my-2 d-none">Product Price Should Be ...</div>
+        <label>Product Category</label>
+        <input id="productCategory" type="text" class="form-control">
+        <div id="categoryAlert" class="alert alert-danger p-2 my-2 d-none">Product Category Should Be ...</div>
+        <label>Product Description</label>
+        <textarea id="productDesc" class="form-control"></textarea>
+        <div id="DescAlert" class="alert alert-danger p-2 my-2 d-none">Product Description Should Be ...</div>
+        
+        <button disabled id="clearBtn" class="btn btn-danger m-3 float-end" onclick="clearForm()">clear</button>
+        <button disabled id="addBtn" class="btn btn-success my-3 float-end">Add Product</button>
+        <div class="clearfix"></div>
+
+        <!-- <input onkeyup="console.log(this.value)" id="searchInput" type="text" placeholder="Search By Name ...." class="form-control my-2"> -->
+        <input id="searchInput" type="text" placeholder="Search By Name ...." class="form-control my-2">
+
+        <table class="table">
+            <thead class="text-primary">
+                <th>Name</th>
+                <th>Price</th>
+                <th>Cetegory</th>
+                <th>Description</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="tableBody" class="text-white">
+
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
